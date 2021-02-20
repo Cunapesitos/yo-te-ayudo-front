@@ -23,23 +23,38 @@ class _LoginViewState extends State<LoginView> {
                 child: Column(
                   children: [
                     SizedBox(
-                      width: 300,
-                      child: TextFormField(
-                        cursorHeight: 2.2,
-                        decoration: InputDecoration(
-                            border: OutlineInputBorder(), labelText: "Usuario"),
+                        width: 300,
+                        height: 200,
+                        child: Image.asset(
+                          'assets/YoteAyudo.png',
+                          height: 200,
+                          width: 200,
+                        )),
+                    Material(
+                      elevation: 2,
+                      child: SizedBox(
+                        width: 300,
+                        child: TextFormField(
+                          cursorHeight: 2.2,
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(),
+                              labelText: "Usuario"),
+                        ),
                       ),
                     ),
                     SizedBox(
                       height: 40,
                     ),
-                    SizedBox(
-                      width: 300,
-                      child: TextFormField(
-                        cursorHeight: 2.2,
-                        decoration: InputDecoration(
-                            border: OutlineInputBorder(),
-                            labelText: "Contraseña"),
+                    Material(
+                      elevation: 2,
+                      child: SizedBox(
+                        width: 300,
+                        child: TextFormField(
+                          cursorHeight: 2.2,
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(),
+                              labelText: "Contraseña"),
+                        ),
                       ),
                     ),
                     SizedBox(
@@ -49,6 +64,8 @@ class _LoginViewState extends State<LoginView> {
                       height: 50,
                       width: 300,
                       child: GFButton(
+                        color: Colors.black,
+                        elevation: 2,
                         onPressed: () {},
                         text: "Iniciar Sesion",
                       ),

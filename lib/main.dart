@@ -16,9 +16,13 @@ class MyApp extends StatelessWidget {
       title: Text(""),
       seconds: 5,
       navigateAfterSeconds: new LoginView(),
-      image: new Image.network(""),
-      backgroundColor: Colors.pink,
-      loaderColor: Colors.white,
+      image: new Image.asset(
+        'assets/YoteAyudo.png',
+        width: 500,
+        height: 500,
+      ),
+      backgroundColor: Colors.white,
+      loaderColor: Colors.black,
     );
   }
 }
