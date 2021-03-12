@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:yoteayudo/loginviews/login.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:yoteayudo/sesions/loginviews/login.dart';
 
 void main() => runApp(new MaterialApp(
       debugShowCheckedModeBanner: false,
