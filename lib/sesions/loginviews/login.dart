@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:yoteayudo/perfiles/elegirperfil.dart';
 
 import '../inputsesion.dart';
 
@@ -75,8 +76,8 @@ class _LoginViewState extends State<LoginView> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => null //ElegirPerfil()),
-          ));
+            MaterialPageRoute(builder: (context) => ElegirPerfil()),
+          );
         },
         color: Colors.black,
         disabledColor: Colors.black,

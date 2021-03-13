@@ -12,7 +12,7 @@ class _InicioEstudianteState extends State<InicioEstudiante> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Inicio"), backgroundColor: Colors.green),
+      appBar: AppBar(title: Text("Inicio"), backgroundColor: Colors.black),
       body: Container(
         child: Center(
           child: ListView(

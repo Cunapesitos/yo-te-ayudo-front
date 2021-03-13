@@ -14,7 +14,7 @@ class _MisClasesState extends State<MisClases> {
       appBar: AppBar(
         
         title: Text("Mis clases"),
-       backgroundColor:Colors.green
+       backgroundColor:Colors.black
       ),
        body: Container(
          child: Center(
