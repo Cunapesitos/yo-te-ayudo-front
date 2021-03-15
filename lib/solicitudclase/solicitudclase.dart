@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:yoteayudo/forms/formulariosolicitudclase.dart';
 
 class SolicitudClase extends StatefulWidget {
   @override
@@ -21,7 +22,7 @@ class _SolicitudClaseState extends State<SolicitudClase> {
               children: <Widget>[
                 SizedBox(height: 100,),
                 GFListTile(
-                  color: Colors.blueGrey,
+                  color: Colors.black,
                   title: Text("Elija el tipo de clase", style: TextStyle(color: Colors.white,fontSize: 30),),
                 ),
                 Container(
@@ -33,7 +34,7 @@ class _SolicitudClaseState extends State<SolicitudClase> {
                               context,
                               MaterialPageRoute(
                                 //este navigator es para la ruta//
-                                builder: (context) => null //ClaseVirtual()
+                                builder: (context) => FormularioSolicitudClase(),
                               ),
                             );
                           },

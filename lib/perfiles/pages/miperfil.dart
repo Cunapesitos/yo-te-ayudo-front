@@ -20,6 +20,23 @@ class _MiperfilState extends State<Miperfil> {
             child: ListView(
               children: <Widget>[
                 SizedBox(height: 20,),
+                SizedBox(height: 20,),
+                GFListTile(
+                  color: Colors.blueGrey,
+                  title: Text("Foto de perfil", style: TextStyle(color: Colors.white),),
+                ),
+                GFAvatar(
+                  backgroundColor: Colors.white,
+                  shape: GFAvatarShape.square,
+                  radius: 100,
+                  size:GFSize.MEDIUM,
+                  child: SizedBox(
+                    height: 800,
+                    width: 500,
+                    child: Image.network("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.QOM8ZKE1twKRs8fY4nUc7QHaHw%26pid%3DApi&f=1"),
+                  ),
+                ),
+                SizedBox(height: 30,),
                 GFListTile(
                   color: Colors.blueGrey,
                   title: Text("DATOS PERSONALES", style: TextStyle(color: Colors.white),),
@@ -79,6 +96,9 @@ class _MiperfilState extends State<Miperfil> {
                             );
                           },
                         ),
+                        SizedBox(height: 50,),
+                        Container(height: 50,),
+                        SizedBox(height: 50,)
                       ],
                     )
                 )

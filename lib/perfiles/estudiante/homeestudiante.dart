@@ -17,9 +17,9 @@ class _HomeEstudianteState extends State<HomeEstudiante> {
   int currentPage=0;
   final List<Widget> _pages=[
     InicioEstudiante(),
-    MisClases(),
     SolicitudClase(),
-    AjustesEstudiante(),
+    MisClases(),
+
     Miperfil()
 
   ];
@@ -28,20 +28,27 @@ class _HomeEstudianteState extends State<HomeEstudiante> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: _pages[currentPage],
       bottomNavigationBar: CircleBottomNavigation(
-        barHeight: 50,
+        circleColor: Colors.black,
+        barHeight: 60,
         circleSize: 50,
         initialSelection: currentPage,
-        inactiveIconColor: Colors.grey,
+        inactiveIconColor: Colors.black,
         textColor: Colors.black,
-        hasElevationShadows: false,
+        hasElevationShadows: true,
         tabs: [
           TabData(
             icon: Icons.home,
             iconSize: 30,
             title: 'Inicio',
+            fontSize: 12,
+            fontWeight: FontWeight.bold,
+          ),
+          TabData(
+            icon: Icons.add,
+            iconSize: 30,
+            title: 'Clases',
             fontSize: 12,
             fontWeight: FontWeight.bold,
           ),
@@ -52,20 +59,8 @@ class _HomeEstudianteState extends State<HomeEstudiante> {
             fontSize: 12,
             fontWeight: FontWeight.bold,
           ),
-           TabData(
-            icon: Icons.accessibility_sharp,
-            iconSize: 30,
-            title: 'Clases',
-            fontSize: 12,
-            fontWeight: FontWeight.bold,
-          ),
-          TabData(
-            icon: Icons.settings,
-            iconSize: 30,
-            title: 'Ajustes',
-            fontSize: 12,
-            fontWeight: FontWeight.bold,
-          ),
+
+
           TabData(
             icon: Icons.person,
             iconSize: 30,

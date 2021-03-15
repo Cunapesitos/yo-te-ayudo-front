@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:yoteayudo/perfiles/estudiante/listadecarreras.dart';
 
 class InicioEstudiante extends StatefulWidget {
   @override
@@ -51,7 +52,7 @@ class _InicioEstudianteState extends State<InicioEstudiante> {
                     context,
                     MaterialPageRoute(
                       //este navigator es para la ruta//
-                      builder: (context) => null//ListaDeCarrerasUni()
+                      builder: (context) => ListaDeCarrerasUni(),
                     ),
                   );
                 },
