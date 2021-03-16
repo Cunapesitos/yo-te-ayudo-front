@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
       navigateAfterSeconds: new LoginView(),
       image: new Image.asset(
         'assets/YoteAyudo.png',
-        width: 500,
-        height: 500,
+        alignment: Alignment.center, height: 500, width: 500,
       ),
       backgroundColor: Colors.white,
       loaderColor: Colors.black,
